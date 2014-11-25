@@ -7,6 +7,14 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var app = express();
+var debug = require('debug')('gumballMachine');
+//var app = require('../app');
+
+app.set('port', process.env.PORT ||4040);
+
+var server = app.listen(app.get('port'), function() {
+  console.log('Express server listening on port ' + server.address().port);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
