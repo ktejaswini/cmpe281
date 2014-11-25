@@ -5,7 +5,7 @@ var Client = require('node-rest-client').Client;
 client = new Client();
 
 
-client.get("http://life.cfapps.io/api/gumball", function(data, response){
+client.get("http://life.cfapps.io/gumballMachine", function(data, response){
             // parsed response body as js object
             console.log(data);
             // raw response
