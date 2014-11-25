@@ -2,8 +2,9 @@
   "name": "gumballMachine",
   "version": "0.0.0",
   "private": true,
+  "main":"app.js",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "~4.9.0",
