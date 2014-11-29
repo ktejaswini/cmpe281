@@ -2,9 +2,8 @@
   "name": "gumballMachine",
   "version": "0.0.0",
   "private": true,
-  "main":"./bin/www",
   "scripts": {
-    "start": "supervisor ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "express": "~4.9.0",
